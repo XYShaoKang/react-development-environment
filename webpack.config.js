@@ -7,6 +7,9 @@ module.exports = env => {
   return {
     entry: './src/index.js',
     devtool: dev && 'cheap-module-eval-source-map',
+    devServer: {
+      hot: true,
+    },
     plugins: [
       new HtmlWebpackPlugin({
         title: 'React Demo',
