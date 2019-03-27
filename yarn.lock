@@ -669,6 +669,16 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@hot-loader/react-dom@^16.8.5":
+  version "16.8.5"
+  resolved "http://registry.npm.taobao.org/@hot-loader/react-dom/download/@hot-loader/react-dom-16.8.5.tgz#72d06837258335b9be8c735bc20ae4c53834649c"
+  integrity sha1-ctBoNyWDNbm+jHNbwgrkxTg0ZJw=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.13.5"
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "http://registry.npm.taobao.org/@webassemblyjs/ast/download/@webassemblyjs/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
