@@ -32,7 +32,7 @@ module.exports = env => {
           use: { loader: 'babel-loader' },
         },
         {
-          test: /\.css?$/,
+          test: /\.less$/,
           loader: [
             {
               loader: 'style-loader',
@@ -45,6 +45,12 @@ module.exports = env => {
               loader: 'css-loader',
               options: {
                 modules: true,
+                sourceMap: dev,
+              },
+            },
+            {
+              loader: 'less-loader',
+              options: {
                 sourceMap: dev,
               },
             },

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { hot } from 'react-hot-loader/root'
 
-import style from './App.css'
+import style from './App.less'
 
 class App extends Component {
   render() {
