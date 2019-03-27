@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --open --env.dev",
     "watch": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack --env.prod"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
