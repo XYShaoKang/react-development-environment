@@ -19,6 +19,11 @@ module.exports = env => {
       filename: 'bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
+    resolve: {
+      alias: {
+        'react-dom': '@hot-loader/react-dom',
+      },
+    },
     module: {
       rules: [
         {

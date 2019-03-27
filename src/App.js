@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { hot } from 'react-hot-loader/root'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -9,7 +10,6 @@ const Wrapper = styled.div`
   text-align: center;
   line-height: 300px;
 `
-
 class App extends Component {
   render() {
     return (
@@ -19,4 +19,4 @@ class App extends Component {
     )
   }
 }
-export default App
+export default hot(App)
