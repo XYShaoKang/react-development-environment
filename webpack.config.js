@@ -7,6 +7,9 @@ module.exports = env => {
   return {
     entry: './src/index.js',
     devtool: dev && 'cheap-module-eval-source-map',
+    devServer: {
+      hot: true,
+    },
     plugins: [
       new HtmlWebpackPlugin({
         title: 'React Demo',
@@ -21,26 +24,7 @@ module.exports = env => {
         {
           test: /\.jsx?$/,
           exclude: /(node_modules|bower_components)/,
-          use: { loader: 'babel-loader' },
-        },
-        {
-          test: /\.css?$/,
-          loader: [
-            {
-              loader: 'style-loader',
-              options: {
-                sourceMap: dev,
-                convertToAbsoluteUrls: dev,
-              },
-            },
-            {
-              loader: 'css-loader',
-              options: {
-                modules: true,
-                sourceMap: dev,
-              },
-            },
-          ],
+          use: 'babel-loader',
         },
       ],
     },

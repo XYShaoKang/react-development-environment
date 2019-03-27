@@ -1,12 +1,22 @@
 import React, { Component } from 'react'
-import style from './styles/App.css'
+import styled from 'styled-components'
 
-export default class App extends Component {
+const Wrapper = styled.div`
+  width: 300px;
+  height: 300px;
+  color: #64d;
+  background: #eb7;
+  text-align: center;
+  line-height: 300px;
+`
+
+class App extends Component {
   render() {
     return (
-      <div className={style.app}>
+      <Wrapper>
         <h1>This is React App</h1>
-      </div>
+      </Wrapper>
     )
   }
 }
+export default App
