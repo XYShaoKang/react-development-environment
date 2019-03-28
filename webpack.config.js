@@ -8,7 +8,12 @@ module.exports = env => {
     entry: './src/index.js',
     devtool: dev && 'cheap-module-eval-source-map',
     devServer: {
+      host: '0.0.0.0',
+      port: 8080,
       hot: true,
+      inline: true,
+      disableHostCheck: true,
+      public: '0.0.0.0:0',
     },
     plugins: [
       new HtmlWebpackPlugin({
