@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --open --env.dev",
+    "start": "webpack-dev-server --open --env.codesandbox",
     "watch": "webpack --watch",
     "build": "webpack --env.prod"
   },

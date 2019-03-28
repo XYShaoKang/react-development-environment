@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = env => {
   const dev = env && env.dev
   const prod = env && env.prod
+  const codesandbox = env && env.codesandbox
+
   return {
     entry: './src/index.js',
     devtool: dev && 'cheap-module-eval-source-map',
@@ -34,7 +36,7 @@ module.exports = env => {
         {
           test: /\.jsx?$/,
           exclude: /(node_modules|bower_components)/,
-          use: { loader: 'babel-loader' },
+          use: ['babel-loader'],
         },
         {
           test: /\.css?$/,
@@ -57,6 +59,6 @@ module.exports = env => {
         },
       ],
     },
-    mode: dev ? 'development' : prod ? 'production' : 'none',
+    mode: dev || codesandbox ? 'development' : prod ? 'production' : 'none',
   }
 }
