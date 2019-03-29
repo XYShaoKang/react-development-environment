@@ -1,12 +1,13 @@
-# react 基础配置
+# 在 CodeSandbox 上开箱即用的 React 基础模板
 
-更多详情 -> [详细配置](./basic-react.md)
+更多详情 -> [适配说明](./basic-react.md)
+
+[预览](https://n71xqjwzjm.sse.codesandbox.io/)
+
+[CodeSandbox 地址](https://codesandbox.io/s/n71xqjwzjm)
 
 ## 快速上手
 
-```sh
-git clone -b basic-react https://github.com/XYShaoKang/react-development-environment.git
-cd react-development-environment
-yarn install
-yarn start
-```
+在浏览器打开`codesandbox.io/s/github/XYShaoKang/react-development-environment/tree/basic-react-support-codesandbox`
+
+或者点击[链接](https://codesandbox.io/s/github/XYShaoKang/react-development-environment/tree/basic-react-support-codesandbox)
